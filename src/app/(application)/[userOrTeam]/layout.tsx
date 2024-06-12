@@ -1,8 +1,8 @@
 import { currentUser } from "@clerk/nextjs/server";
 import { Protect } from "@clerk/nextjs";
 import type { Metadata } from "next";
-import type { OrganizationMembership } from "@/utils/additional-types";
-import { fetchUserOrganizationMemberships } from "@/utils/auth";
+import type { OrganizationMembership } from "@/lib/utils/additional-types";
+import { fetchUserOrganizationMemberships } from "@/lib/utils/auth";
 
 export const metadata: Metadata = {
   title: "vertature.com",

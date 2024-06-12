@@ -3,8 +3,8 @@ import { Protect } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import OrganizationRedirect from "@/components/OrganizationRedirect";
 import Navbar from "@/components/Navbar";
-import type { OrganizationMembership } from "@/utils/additional-types";
-import { fetchUserOrganizationMemberships } from "@/utils/auth";
+import type { OrganizationMembership } from "@/lib/utils/additional-types";
+import { fetchUserOrganizationMemberships } from "@/lib/utils/auth";
 
 export const metadata: Metadata = {
   title: "vertature.com",
